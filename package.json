@@ -1,0 +1,21 @@
+{
+  "name": "ai-bible-chapter-summary-generator",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "format": "dotnet format AI-Bible-Chapter-Summary-Generator.sln",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^20.1.0",
+    "@commitlint/config-conventional": "^20.0.0",
+    "husky": "^9.1.7",
+    "lint-staged": "^16.2.6"
+  },
+  "lint-staged": {
+    "*.cs": [
+      "echo 'Running dotnet format on AI-Bible-Chapter-Summary-Generator.sln…'",
+      "dotnet format AI-Bible-Chapter-Summary-Generator.sln --include"
+    ]
+  }
+}
