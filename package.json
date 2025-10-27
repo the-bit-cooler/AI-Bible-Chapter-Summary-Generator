@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "scripts": {
+    "summarize": "dotnet run -- summarize",
     "format": "dotnet format AI-Bible-Chapter-Summary-Generator.sln",
     "prepare": "husky"
   },

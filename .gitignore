@@ -1,3 +1,6 @@
 node_modules
 obj
 bin
+
+processed_books.json
+chapter_progress.json
