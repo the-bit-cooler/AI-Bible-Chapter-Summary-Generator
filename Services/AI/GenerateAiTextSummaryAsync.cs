@@ -73,7 +73,7 @@ public partial class AiService
       // 5️⃣ Upload to Azure Storage
       using MemoryStream stream = new(Encoding.UTF8.GetBytes(chapter.summary));
 
-      BlobClient blobClient = await DataService.GetBlobClientAsync(book, chapter.chapter, "text");
+      BlobClient blobClient = await DataService.GetBlobClientAsync(book, chapter.chapter, "txt");
 
       await blobClient.UploadAsync(stream, overwrite: true);
     }
