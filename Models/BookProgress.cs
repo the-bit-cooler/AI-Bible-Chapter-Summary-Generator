@@ -2,5 +2,5 @@ namespace ScripturAI.Models;
 
 public class BookProgress
 {
-  public int LastChapterFinished { get; set; }
+  public int LastChapterIndexFinished { get; set; }
 }

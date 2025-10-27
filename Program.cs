@@ -73,7 +73,7 @@ static async Task SummarizeBibleChapters()
 
     if (bookProgress.TryGetValue(bookName, out var progress))
     {
-      chapterStart = progress.LastChapterFinished + 1; // resume after last completed chapter
+      chapterStart = progress.LastChapterIndexFinished + 1; // resume after last completed chapter
     }
 
     Console.WriteLine($"Starting to summarize from {bookName} {chapterStart + 1}.");
@@ -99,7 +99,7 @@ static async Task SummarizeBibleChapters()
       Console.WriteLine($"Completed summary for {bookName} {chapter.chapter}.");
 
       // ✅ Save progress after each successful batch
-      bookProgress[bookName] = new BookProgress { LastChapterFinished = i };
+      bookProgress[bookName] = new BookProgress { LastChapterIndexFinished = i };
       SaveBookProgress(progressFilePath, bookProgress);
     }
 
