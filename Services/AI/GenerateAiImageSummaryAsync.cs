@@ -13,10 +13,19 @@ public partial class AiService
     if (string.IsNullOrEmpty(chapter.summary)) throw new Exception($"Missing {book} {chapter.chapter} summary.");
 
     string prompt = $@"
-      Create a detailed, reverent, classical-style image representing the main themes of {book} {chapter} from the Bible.
-      Avoid modern elements or text. 
-      Use the following summary to guide your composition: 
+      Create a peaceful, respectful, and symbolic illustration in a classical or renaissance-inspired style 
+      that represents the main themes of {book} {chapter} from the Bible.
+
+      Use the following summary for guidance:
       {chapter.summary}
+
+      Guidelines:
+      - Depict the spiritual or moral message, not literal violence or distressing events.
+      - Do not include modern objects, technology, or text.
+      - Avoid any depiction of blood, nudity, sexual content or self-harm.
+      - The scene should feel timeless, uplifting, and suitable for all audiences.
+      - Emphasize light, hope, redemption, and divine presence.
+      - Composition should reflect reverence and calm — similar to traditional sacred art.
     ";
 
 #pragma warning disable OPENAI001 // Type is for evaluation purposes only and is subject to change or removal in future updates. Suppress this diagnostic to proceed.
