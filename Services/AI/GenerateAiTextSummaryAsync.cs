@@ -35,8 +35,8 @@ public partial class AiService
         - Output only the summary text — no preamble or extra formatting or version or book and chapter heading.
 
         Safety and Tone Requirements:
-        - Avoid using words or imagery related to violence, war, death, sexual acts, or self-harm.
-        - Instead of literal descriptions of violent or disturbing acts, summarize their purpose or outcome (e.g., say “a battle took place” instead of “people were killed”).
+        - Avoid using words or imagery related to violence, war, death, sexual acts, nudity, or self-harm.
+        - Instead of literal descriptions of these things, summarize their purpose or outcome (e.g., say “a battle took place” instead of “people were killed”).
         - Use calm, neutral, and reverent language appropriate for all audiences.
         - Do not include or imply explicit, gory, or disturbing details.
       "),
